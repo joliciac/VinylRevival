@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- This is a website for vinyl record player repairs and record restoration -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="x-icon" href="images/craiyon_225859_broken_vinyl_record.png">
+        <!-- Title -->
+        <title>Vinyl Revival | Vinatage record player repair and record restoration</title>
+        <link rel="stylesheet" href="index.css">
+
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(images/vinylbackground.jpg)no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+/* Content */
+.content{
+    max-width: 650px;
+    /* height: 350px; */
+    margin: 200px 100px 0px 950px;
+    /* margin: auto; */
+    background-color: #efdcbe;
+    font-family: 'manrope', cursive;
+    border-radius: 20px;
+    text-align: center;
+    animation: slideInFromRight 2s ease-in;
+
+}
+
+.content p{
+    background-color: #cee5cc;
+    font-family: 'manrope', cursive;
+    border-radius: 20px;
+}
+
+.content .info h2{
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content .info p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    margin: 15px;
+}
+
+.content .info-btn{
+    color: rgb(92, 92, 94);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 15px;
+    padding: 10px 20px;
+}
+
+.content .info-btn:hover{
+    box-shadow: 3px 2px 5px 3px #b4d9c0;
+    border-radius: 25px;
+}
+
+
+/* Animation */
+@keyframes slideInFromRight {
+    0%{
+        transform: translateX(100%); /* Starts 100% off the screen to the right on the x axis */
+    }
+    100% {
+        transform: translateX(0); /*The animation will then end on the positive x axis at 0 where it orginally was*/
+    }
+}
+
+/* Media */
+@media (max-width: 960px){
+    .content .info h2{
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .content .info p{
+        font-size: 14px;
+    }
+    .content{
+        margin: 40px 200px 0px 250px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 560px){
+    .content .info h2{
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .content .info p{
+        font-size: 14px;
+    }
+    .content{
+        margin: auto;
+        width: 50%;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <!-- Navigation bar -->
+            <nav>
+                <ul class="navbar">
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="service.html">Tips for repair</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <!-- End of navbar -->
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="info">
+                <h1>Vinyl Revival</h1>
+                <h2>The Origin</h2>
+                <p>Due to the uniqueness of vinyls, people are reviving their love for it and taking an interest because it is a piece of art that differentiates it from a typical streaming platform – it cannot be digitalised. 
+                    Making a vinyl requires great deal of intricacy and arduous craftmanship and knowledge of old-school manufacturing to produce a masterpiece. 
+                    Vinyl’s were first launched commercially in 1930 hence the reason they are a valuable antique and require dedicated labour to produce.
+                    Vinyl Revival wants to emphasize the labour that will be put in to producing high-quality results.
+                    <br><br><a href="index.html" class="info-btn">More Info</a>
+                </p>
+            </div>    
+        </div>
+    </body>
+</html>

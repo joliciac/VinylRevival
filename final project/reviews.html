@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="x-icon" href="images/craiyon_225859_broken_vinyl_record.png">
+        <!-- Title -->
+        <title>Vinyl Revival | Vinatage record player repair and record restoration</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="review.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Validation check -->
+        <script>
+            function ValidationCheck(form){
+                if(form.name.value==""){
+                alert("Please enter your name")
+                }
+            //    else if(form.item.value==""){
+            //     alert("Please enter an item")
+            //     }
+               else if(form.comments.value==""){
+                alert("Please write a review")
+                }
+                else{
+                    alert("Thank you for your review, it should appear on our website in 3-5 days :)")
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <!-- Navigation bar -->
+            <nav>
+                <ul class="navbar">
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="service.html">Tips for repair</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <!-- End of navabr -->
+        </header>
+        <!-- Main container for the background -->
+        <div class="mainContainer">
+            <div class="VR">
+                <h1 class="title">Vinyl Revival</h1>
+            </div>
+            <div class="logo">
+                <img class="logo" src="images/craiyon_225859_broken_vinyl_record.png" alt="logo">
+            </div>
+        
+            <!-- Subcontainer for the body of all the information -->
+            <div class="subcontainer middle">
+                <!--Reviews -->
+                <h2>Reviews</h2>
+                <div class="grid-container gc" style="width: 90%;">
+                    <div class="name">
+                        <p><b>Name</b>: Joel
+                        <br>
+                            <b>What was restored</b>: Record restoration
+                        </p>
+                        &#11088;&#11088;&#11088;&#11088;&#11088;
+                    </div>
+                    <div class="review">
+                        <p>
+                            What a fantastic service from a very professional person! The serivce was exactly as described. Very friendly communication. You will not be disappointed!
+                        </p>
+                        <br>
+                    </div>
+                    <div class="name">
+                        <p><b>Name</b>: Alice
+                            <br>
+                            <b>What was restored</b>: Record player repair
+                        </p>
+                        &#11088;&#11088;&#11088;&#11088;
+                        <br>
+                    </div>
+                    <div class="review">
+                        <p>
+                            Reliable company who solves problems very sincerely and promptly. AAA++
+                        </p>
+                    </div>
+                    <div class="name">
+                        <p><b>Name</b>: Peter
+                            <br>
+                            <b>What was restored</b>: Record restoration
+                        </p>
+                        &#11088;&#11088;&#11088;&#11088;&#11088;
+                    </div>
+                    <div class="review">
+                        <p>
+                            Perfection. So thankful to the company to have restored such a beautiful record that I've loved for so long. 
+                    </div>
+                    <div class="name">
+                        <p><b>Name</b>: Peter
+                            <br>
+                            <b>What was restored</b>: Record Restoration
+                        </p>
+                        &#11088;&#11088;&#11088;
+                    </div>
+                    <div class="review">
+                        <p>
+                            Prompt and professional. Excellent communication and the record was restored to a great quality and the packaging when returned was in good condition.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Review form so customers can contact the company and they must include all the form neccessary fields -->
+                <form class="reviewsubmission">
+                    <h5>Leave a Review</h5> 
+                    <br>
+                    <input name="name" type="text" required size="40" placeholder="Name*">
+                    <br><br>
+                    <select id="repair" name="repair" required>
+                        <option value="standard">What was restored*</option>
+                        <option value="record">Record restoration</option>
+                        <option value="player">Record player repair</option>
+                    </select>
+                    <select id="rating" name="rating" required>
+                        <option value="standard">How many stars would you rate the service</option>
+                        <option value="record">&#11088;</option>
+                        <option value="player">&#11088;&#11088;</option>
+                        <option value="player">&#11088;&#11088;&#11088;</option>
+                        <option value="player">&#11088;&#11088;&#11088;&#11088;</option>
+                        <option value="player">&#11088;&#11088;&#11088;&#11088;&#11088;</option>
+                    </select>
+                    <!-- <input name="item" type="text" required size="40" placeholder="What was restored*"> -->
+                    <!-- Change to a select tag? -->
+                    <br>
+                    Review*
+                    <br> 
+                    <textarea name="comments" rows="8" cols="100"></textarea>
+                    <br>
+                    <button onclick="ValidationCheck(this.form)" style="font-size:24px">submit <i class="fa fa-play-circle"></i></button>
+                </form>
+
+            </div>
+
+            <!-- Footer includes the logo, title, short slogan, and copyright details -->        
+            <footer class="footer">
+                <div>
+                    <img class="footerlogo" src="images/craiyon_225859_broken_vinyl_record.png" alt="logo">
+                    <h1>Vinyl Revival</h1>
+                    <p>Specialist in <strong><i>care</i></strong> handling</p>
+                    <p>Copyright Vinyl Revival &copy; 2023</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

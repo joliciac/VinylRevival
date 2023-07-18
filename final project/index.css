@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Manrope:wght@300&display=swap');
+
+
+/* This is to set everthing at zero so that it is easier to make adjustments after */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* The body and the main container*/
+body,div.mainContainer{
+    background-color: #efdcbe;
+    font-family: 'manrope', cursive;
+}
+
+/* Sub/middle container */
+div.middle{
+    padding: 50px; /*This creates space around the middle div to show that this is where the main content is going to be*/
+    background-color: #cee5cc;
+    width: 90%; /*The width of this container is 90% so it does not fill the whole screen. Percentage is used so that it can be responsive*/
+    margin: auto;
+    min-height: 90vh;
+    box-shadow: 3px 2px 5px 3px rgba(0,0,0,0.46);
+    
+}
+
+/* Logo */
+ 
+div.logo{
+    text-align: center;
+}
+/* The image has a radius of 50% to make it rounded like a vinyl and the animation is used to make it spin infintely */
+img.logo{
+    border-radius: 50%;
+    width: 9%;
+    animation: slideInFromLeft 1s, spin 3s linear infinite;
+}
+
+
+/* Main Title */
+
+h1{
+    color:  rgb(92, 92, 94);
+    font-size: 35px;
+    font-family: 'Climate Crisis', cursive;
+    /* animation: slideInFromLeft 2s ease-in; */
+}
+
+.VR{
+    text-align: center;
+}
+
+header{
+    /* text-align: center; */
+    padding: 5px;
+}
+
+
+/* Navigation for all pages*/
+
+ul.navbar{
+    display: inline-flex;
+    list-style: none;
+}
+
+ul.navbar li{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+}
+
+ul.navbar a{
+    display: block;
+    width: 150px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: rgb(92, 92, 94);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+ul.navbar a:hover{
+    box-shadow: 3px 2px 5px 3px #b4d9c0;
+    border-radius: 25px;
+}
+
+
+
+/* image gallery */
+div.imgContainer{
+    text-align: center;
+    animation: slideInFromRight 2s ease-in;
+}
+img.VP{
+    filter: grayscale(100%);
+}
+img.VP:hover{
+    /* animation: imageSpin 3s ease-in; */
+    animation: img 2s alternate-reverse infinite;
+    filter: grayscale(0);
+}
+ul.imgContainer{
+    list-style: none;
+    padding: 50px;
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    display: inline-flex;
+}
+
+h2{
+    text-align: center;
+    color: rgb(92, 92, 94);
+    font-size: 25px;
+}
+
+.p1{
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+/* About us and what we offer using a grid template*/
+h3{
+    padding-top: 50px;
+    border-top: 5px solid black;
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(92, 92, 94);
+}
+
+/* Container class to create a grid for the text and image 2x2 */
+.grid-container{
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: auto auto;
+    margin: auto;
+    text-align: center;
+
+}
+
+.grid-container img{
+    width: 50%;
+    height: auto;
+}
+ p.aboutus{
+    font-size: 20px;
+ }
+
+ /* Background of the content will be the same colour as the main container for effect */
+.grid-content{
+    background-color: #efdcbe;
+    width: 80%;
+    padding: 85px;
+}
+
+
+/* footer */
+.footer{
+    text-align: center;
+    padding: 20px;
+}
+img.footerlogo{
+    border-radius: 50%;
+    width: 5%;
+}
+
+/* Hyperlinks */
+
+a:link {
+    color: blue;
+}    				
+	
+a:visited {
+    color:red;
+}
+
+/* Animations */
+
+/* Keyframe for Logo 360 degrees rotation from the start */
+@keyframes spin{
+    100%{ 
+        rotate: 360deg;
+        
+    }
+
+}
+
+/* Keyframe for the title and the logo to slide in from the left */
+@keyframes slideInFromLeft {
+    0%{
+        transform: translateX(-100%); /* Starts 100% off the screen to the left on the -x axis */
+    }
+    100% {
+        transform: translateX(0); /*The animation will then end on the positive x axis at 0 where it orginally was*/
+    }
+}
+
+/* Keyframe to scale the images on the home page so they pop up towards you */
+@keyframes img {
+    100%{
+        transform: scale(1.1);
+    }
+
+}
+
+
+
+/*media */
+@media only screen and (max-width: 1000px){
+    ul.navbar{
+        display: block; 
+        /* background-color: red; */
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    .imgContainer{
+        display: block;
+        flex-direction: column;
+    }
+    .grid-container{
+        display: block;
+        flex-direction: column;
+        width: 60%;
+    }
+}
+
